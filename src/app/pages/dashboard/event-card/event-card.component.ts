@@ -21,7 +21,6 @@ import { RouterLink, RouterOutlet  } from '@angular/router';
       <!-- <a [routerLink]="['/details', Event.id]">Learn More</a> -->
     </section>
   `,
-  styleUrls: ['./event-card.component.scss']
 })
 export class EventCardComponent {
   @Input() Event!: Event;
