@@ -16,7 +16,6 @@ export class EventService {
 
   getEventList(): Observable<Event[]> {
     const path = API_PATH + 'eventos';
-console.log('aaaaa')
     return this.http.get<Event[]>(path);
   }
 }

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Event } from 'src/app/models/event';
 
 @Component({
   selector: 'app-listing',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./listing.component.scss']
 })
 export class ListingComponent {
+  @Input() eventList: Event[] = []; 
+  @Input() loadingEvents = false;
 
+  selectedEvent: Event | null = null;
 }
